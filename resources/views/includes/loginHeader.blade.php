@@ -94,7 +94,6 @@
               </a>
             </li>
           </ul>
-        </div>{{-- user_dash ends --}}
           <div class="options-dropdown">
             <i class="fas fa-caret-down"></i>
 
@@ -112,7 +111,7 @@
               </form>
             </div>{{-- myDropdown ends here --}}
           </div>{{-- options_dropdown ends here --}}
-        </div>
+        </div>{{-- user_dash ends --}}
         <div class="search-area">
           <ul>
             <li>
@@ -127,7 +126,7 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div>{{-- search_area ends here --}}
       @endguest
     </div> {{-- head container end here --}}
   </header>

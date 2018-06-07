@@ -1,15 +1,18 @@
 header{
   background: $royalAzul;
-  height: 60px;
+  // height: 60px;
+  padding: 18px;
 }
 
 .logo{
   color: white;
   display: inline-block;
+  width: 20%;
 
   a{
     color: white;
     text-decoration: none;
+    font-weight: 800;
     font-size: 32px;
   }
 }
@@ -20,6 +23,7 @@ header{
 
 .user-info{
   display: inline-block;
+  width: 20%;
   ul{
     li{
       display: inline-block;
@@ -29,22 +33,21 @@ header{
 
 .user-dash{
   display: inline-block;
+  width: 20%;
   ul{
+    display: inline-block;
     li{
       display: inline-block;
     }
   }
-}
-
-.options-dropdown{
-  display: inline-block;
-  i{
+  .options-dropdown{
     display: inline-block;
   }
 }
 
 .search-area{
   display: inline-block;
+  width: 20%;
   ul{
     li{
       display: inline-block;

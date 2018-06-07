@@ -137,17 +137,19 @@ table {
 
 header {
   background: #3B5998;
-  height: 60px;
+  padding: 18px;
 }
 
 .logo {
   color: white;
   display: inline-block;
+  width: 20%;
 }
 
 .logo a {
   color: white;
   text-decoration: none;
+  font-weight: 800;
   font-size: 32px;
 }
 
@@ -157,6 +159,7 @@ header {
 
 .user-info {
   display: inline-block;
+  width: 20%;
 }
 
 .user-info ul li {
@@ -165,26 +168,33 @@ header {
 
 .user-dash {
   display: inline-block;
+  width: 20%;
+}
+
+.user-dash ul {
+  display: inline-block;
 }
 
 .user-dash ul li {
   display: inline-block;
 }
 
-.options-dropdown {
-  display: inline-block;
-}
-
-.options-dropdown i {
+.user-dash .options-dropdown {
   display: inline-block;
 }
 
 .search-area {
   display: inline-block;
+  width: 20%;
 }
 
 .search-area ul li {
   display: inline-block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
