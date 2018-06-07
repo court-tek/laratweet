@@ -51,7 +51,7 @@
                 <td class="login_form_label">
                   <div class="password_forgot">
                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                        {{ __('Forgot Your Password?') }}
+                        {{ __('Forgot Password?') }}
                     </a>
                   </div>
                 </td>
@@ -77,7 +77,7 @@
           </ul>
         </div>{{-- user-info ends --}}
         <div class="user-dash">
-          <ul>
+          <ul class="quick-options">
             <li>
               <a href="#">
                 <i class="fas fa-users"></i>
@@ -97,7 +97,7 @@
           <div class="options-dropdown">
             <i class="fas fa-caret-down"></i>
 
-            {{-- <div id="myDropdown" class="dropdown-content">
+            <div id="myDropdown" class="dropdown-content">
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
               <a class="dropdown-item" href="{{ route('logout') }}"
@@ -105,7 +105,6 @@
                  document.getElementById('logout-form').submit();">
                   {{ __('Logout') }}
               </a>
-
               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                   @csrf
               </form>

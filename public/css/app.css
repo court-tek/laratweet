@@ -140,56 +140,92 @@ header {
   padding: 18px;
 }
 
-.logo {
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+header .logo {
   color: white;
   display: inline-block;
   width: 20%;
+  padding-left: 40px;
+  margin-left: -4px;
 }
 
-.logo a {
+header .logo a {
   color: white;
   text-decoration: none;
   font-weight: 800;
   font-size: 32px;
 }
 
-.login-area {
+header .login-area {
   display: inline-block;
+  text-align: right;
 }
 
-.user-info {
+header .user-info {
   display: inline-block;
   width: 20%;
+  margin-left: -4px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: right;
+  padding-right: 20px;
 }
 
-.user-info ul li {
+header .user-info ul li {
   display: inline-block;
 }
 
-.user-dash {
-  display: inline-block;
-  width: 20%;
+header .user-info ul li a {
+  margin-right: 20px;
 }
 
-.user-dash ul {
-  display: inline-block;
-}
-
-.user-dash ul li {
-  display: inline-block;
-}
-
-.user-dash .options-dropdown {
-  display: inline-block;
-}
-
-.search-area {
+header .user-dash {
   display: inline-block;
   width: 20%;
+  margin-left: -4px;
 }
 
-.search-area ul li {
+header .user-dash .quick-options {
   display: inline-block;
+  margin-left: -4px;
+  padding-left: 26px;
+  padding-right: 36px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header .user-dash .quick-options li {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+header .user-dash .options-dropdown {
+  display: inline-block;
+  margin-left: -4px;
+  padding-left: 20px;
+}
+
+header .user-dash .options-dropdown .fa-caret-down {
+  color: white;
+}
+
+header .search-area {
+  display: inline-block;
+  width: 40%;
+  margin-left: -4px;
+  text-align: right;
+}
+
+header .search-area ul li {
+  display: inline-block;
+}
+
+header .search-area ul li .fa-search {
+  color: white;
 }
 
 * {
