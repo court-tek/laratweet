@@ -97,16 +97,21 @@
         </div>{{-- user_dash ends --}}
           <div class="options-dropdown">
             <i class="fas fa-caret-down"></i>
-            {{-- <a class="dropdown-item" href="{{ route('logout') }}"
-               onclick="event.preventDefault();
-                             document.getElementById('logout-form').submit();">
-                {{ __('Logout') }}
-            </a>
 
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                @csrf
-            </form>
-          </div> --}}
+            {{-- <div id="myDropdown" class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a class="dropdown-item" href="{{ route('logout') }}"
+                 onclick="event.preventDefault();
+                 document.getElementById('logout-form').submit();">
+                  {{ __('Logout') }}
+              </a>
+
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                  @csrf
+              </form>
+            </div>{{-- myDropdown ends here --}}
+          </div>{{-- options_dropdown ends here --}}
         </div>
         <div class="search-area">
           <ul>
