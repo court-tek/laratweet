@@ -1,0 +1,53 @@
+header{
+  background: $royalAzul;
+  height: 60px;
+}
+
+.logo{
+  color: white;
+  display: inline-block;
+
+  a{
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+  }
+}
+
+.login-area{
+  display: inline-block;
+}
+
+.user-info{
+  display: inline-block;
+  ul{
+    li{
+      display: inline-block;
+    }
+  }
+}
+
+.user-dash{
+  display: inline-block;
+  ul{
+    li{
+      display: inline-block;
+    }
+  }
+}
+
+.options-dropdown{
+  display: inline-block;
+  i{
+    display: inline-block;
+  }
+}
+
+.search-area{
+  display: inline-block;
+  ul{
+    li{
+      display: inline-block;
+    }
+  }
+}
