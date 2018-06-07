@@ -13,7 +13,7 @@
             @csrf
           <table cellspacing="0" role="presentation">
             <tbody>
-              <tr>
+              <tr class="label-row">
                 <td class="html7magic">
                   <label for="email" class="col">{{ __('E-Mail Address') }}</label>
                 </td>
@@ -22,7 +22,7 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="input-row">
                   <input id="email" type="email" class="soul-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
 
                   @if ($errors->has('email'))
@@ -31,7 +31,7 @@
                       </span>
                   @endif
                 </td>
-                <td>
+                <td class="input-row">
                   <input id="password" type="password" class="soul-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                   @if ($errors->has('password'))
@@ -50,7 +50,7 @@
                 <td class="login_form_label"></td>
                 <td class="login_form_label">
                   <div class="password_forgot">
-                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                    <a  style="color: #BBC1CD; font-size: 12px;" class="btn btn-link" href="{{ route('password.request') }}">
                         {{ __('Forgot Password?') }}
                     </a>
                   </div>
@@ -108,7 +108,8 @@
               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                   @csrf
               </form>
-            </div>{{-- myDropdown ends here --}}
+            </div>
+            {{-- myDropdown ends here --}}
           </div>{{-- options_dropdown ends here --}}
         </div>{{-- user_dash ends --}}
         <div class="search-area">

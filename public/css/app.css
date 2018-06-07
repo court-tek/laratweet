@@ -136,7 +136,8 @@ table {
 }
 
 header {
-  background: #3B5998;
+  background: #3b5998;
+  height: 75px;
   padding: 18px;
 }
 
@@ -164,7 +165,25 @@ header .logo a {
 
 header .login-area {
   display: inline-block;
-  text-align: right;
+  float: right;
+  width: 40%;
+}
+
+header .login-area table {
+  margin-top: -8px;
+}
+
+header .login-area table tbody {
+  font-size: 12px;
+}
+
+header .login-area table tbody tr td {
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+header .login-area table tbody tr td label {
+  color: white;
 }
 
 header .user-info {
