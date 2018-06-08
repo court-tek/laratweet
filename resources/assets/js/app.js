@@ -16,13 +16,14 @@ require("./components/index");
 
 /** Header login/signup javaScript  */
 
-let caretDrop = document.querySelector(".dropdown-content");
+let caretDrop = document.querySelector(".fa-caret-down");
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-  caretDrop.classList.toggle("show");
-}
+caretDrop.addEventListener("click", function() {
+  // caretDrop.classList.toggle("show");
+  console.log("we you at?");
+});
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {

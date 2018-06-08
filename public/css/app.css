@@ -244,12 +244,13 @@ header .user-dash .options-dropdown {
   padding-left: 20px;
 }
 
-header .user-dash .options-dropdown .fa-caret-down {
-  color: white;
+header .user-dash .options-dropdown:hover .dropdown-content {
+  display: block;
 }
 
-header .user-dash .options-dropdown .show-menu {
-  display: block;
+header .user-dash .options-dropdown .fa-caret-down {
+  font-size: 20px;
+  color: white;
 }
 
 header .user-dash .options-dropdown .dropdown-content {
@@ -257,6 +258,7 @@ header .user-dash .options-dropdown .dropdown-content {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
+  text-decoration: none;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;

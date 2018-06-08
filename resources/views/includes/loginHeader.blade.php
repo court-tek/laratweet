@@ -95,9 +95,9 @@
             </li>
           </ul>
           <div class="options-dropdown">
-            <i class="fas fa-caret-down" onclick="myFunction();"></i>
+            <i class="fas fa-caret-down"></i>
 
-            <div id="myDropdown" class="dropdown-content">
+            <div id="myDropdown" class="dropdown-content" style="right:0;">
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
               <a class="dropdown-item" href="{{ route('logout') }}"

@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class App extends Component {
-
+class Posts extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      body: ''
-    }
+      body: ""
+    };
     // bind
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -16,13 +15,15 @@ class App extends Component {
   handleSubmit(e) {
     e.preventDefault();
     // this.postData();
-    axios.post('/posts', {
+    axios
+      .post("/posts", {
         body: this.state.body
-    }).then(response => console.log(response))
+      })
+      .then(response => console.log(response));
   }
 
   postData() {
-    axios.post('/posts', {
+    axios.post("/posts", {
       body: this.state.body
     });
   }
@@ -30,7 +31,7 @@ class App extends Component {
   handleChange(e) {
     this.setState({
       body: e.target.value
-    })
+    });
   }
   render() {
     return (
@@ -42,15 +43,15 @@ class App extends Component {
 
               <div className="card-body">
                 <form onSubmit={this.handleSubmit}>
-                <div className="form-group">
-                  <textarea
-                    onChange={this.handleChange}
-                    className="form-control"
-                    rows="5"
-                    maxLength="140"
-                    placeholder="Whats up?"
-                  />
-                </div>
+                  <div className="form-group">
+                    <textarea
+                      onChange={this.handleChange}
+                      className="form-control"
+                      rows="5"
+                      maxLength="140"
+                      placeholder="Whats up?"
+                    />
+                  </div>
                   <input type="submit" value="Post" className="form-control" />
                 </form>
               </div>
@@ -72,4 +73,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Posts;
