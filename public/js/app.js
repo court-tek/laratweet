@@ -14059,7 +14059,6 @@ module.exports = __webpack_require__(59);
 /* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes React and other helpers. It's a great starting point while
@@ -14075,6 +14074,30 @@ __webpack_require__(20);
  */
 
 __webpack_require__(43);
+
+/** Header login/signup javaScript  */
+
+var caretDrop = document.querySelector(".dropdown-content");
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  caretDrop.classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches(".fa-caret-down")) {
+    var dropdowns = caretDrop;
+    var i = void 0;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
+};
 
 /***/ }),
 /* 20 */

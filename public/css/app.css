@@ -139,6 +139,7 @@ header {
   background: #3b5998;
   height: 75px;
   padding: 18px;
+  border-bottom: 1px solid #111;
 }
 
 header a {
@@ -186,6 +187,20 @@ header .login-area table tbody tr td label {
   color: white;
 }
 
+header .login-area table tbody tr td input[type="email"],
+header .login-area table tbody tr td input[type="password"] {
+  border: 1px solid #111;
+}
+
+header .login-area table tbody tr td .btn-login {
+  background: blue;
+  color: white;
+  font-weight: 800;
+  border: 1px solid #111;
+  height: 24px;
+  font-size: 12px;
+}
+
 header .user-info {
   display: inline-block;
   width: 20%;
@@ -223,6 +238,7 @@ header .user-dash .quick-options li {
 }
 
 header .user-dash .options-dropdown {
+  position: relative;
   display: inline-block;
   margin-left: -4px;
   padding-left: 20px;
@@ -230,6 +246,31 @@ header .user-dash .options-dropdown {
 
 header .user-dash .options-dropdown .fa-caret-down {
   color: white;
+}
+
+header .user-dash .options-dropdown .show-menu {
+  display: block;
+}
+
+header .user-dash .options-dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+header .user-dash .options-dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+header .user-dash .options-dropdown .dropdown-content a:hover {
+  background-color: #ddd;
 }
 
 header .search-area {
@@ -241,10 +282,28 @@ header .search-area {
 
 header .search-area ul li {
   display: inline-block;
+  position: relative;
+}
+
+header .search-area ul li input[type="text"] {
+  width: 375px;
+  height: 28px;
+  color: white;
+  font-size: 15px;
+  background-color: #3b5998;
+  border: none;
+  border-bottom: 2px solid #9cb4d8;
 }
 
 header .search-area ul li .fa-search {
   color: white;
+}
+
+header .search-area ul li .fa-times {
+  position: absolute;
+  font-size: 18px;
+  left: -19px;
+  top: -13px;
 }
 
 * {

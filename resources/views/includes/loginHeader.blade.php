@@ -41,8 +41,8 @@
                   @endif
                 </td>
                 <td>
-                  <button type="submit" class="btn">
-                      {{ __('Login') }}
+                  <button type="submit" class="btn-login">
+                      {{ __('Log In') }}
                   </button>
                 </td>
               </tr>
@@ -95,7 +95,7 @@
             </li>
           </ul>
           <div class="options-dropdown">
-            <i class="fas fa-caret-down"></i>
+            <i class="fas fa-caret-down" onclick="myFunction();"></i>
 
             <div id="myDropdown" class="dropdown-content">
               <a href="#">Link 1</a>
@@ -108,8 +108,7 @@
               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                   @csrf
               </form>
-            </div>
-            {{-- myDropdown ends here --}}
+            </div>{{-- myDropdown ends here --}}
           </div>{{-- options_dropdown ends here --}}
         </div>{{-- user_dash ends --}}
         <div class="search-area">
@@ -118,7 +117,7 @@
               <i class="fas fa-search"></i>
             </li>
             <li>
-              <input type="text" name="" value="">
+              <input type="text" name="search" placeholder="Search">
             </li>
             <li>
               <a href="#">
